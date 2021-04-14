@@ -28,7 +28,7 @@ jobs:
       run: flutter test -- coverage
     
     - name: Sending the results to codecov
-      run: run: bash <(curl -s https://codecov.io/bash) -t ${{secrets.CODECOV_TOKEN}}
+      run: bash <(curl -s https://codecov.io/bash) -t ${{secrets.CODECOV_TOKEN}}
       working-directory: ./hortum_mobile
 
     - name: Running lint
